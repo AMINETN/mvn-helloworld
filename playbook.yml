@@ -1,11 +1,11 @@
 ---
 - hosts: web-servers
-  remote_user: ansadmin
+  remote_user: root
   become: true
   tasks:
   - name: copier file source vers destination
     copy:
       src: 'target/Gestion.jar'
-      dest: '/home/ansadmin/test'
+      dest: '/root/test'
       
  
