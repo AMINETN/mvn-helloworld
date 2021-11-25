@@ -5,7 +5,7 @@
   tasks:
   - name: copier file source vers destination
     copy:
-      src: '/home/ansadmin/filename.yml'
+      src: '/home/ansadmin'
       dest: '/home/ansadmin/test'
       
  
