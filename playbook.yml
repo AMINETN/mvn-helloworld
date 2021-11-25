@@ -1,0 +1,11 @@
+---
+- hosts: web-servers
+  remote_user: ansadmin
+  become: true
+  tasks:
+  - name: creer le group
+    group:
+      name: dev
+      state: present
+      
+ 
