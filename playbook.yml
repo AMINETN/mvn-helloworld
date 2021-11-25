@@ -3,9 +3,9 @@
   remote_user: ansadmin
   become: true
   tasks:
-  - name: creer le group
-    group:
-      name: dev
-      state: present
+  - name: copier file source vers destination
+    copy:
+      src: '/home/ansadmin/filename.yml'
+      dest: '/home/ansadmin/test'
       
  
